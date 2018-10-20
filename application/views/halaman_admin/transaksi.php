@@ -8,7 +8,7 @@
 				<!-- Sesuaikan Column Table -->
 				<th>#</th>
 				<th>Date</th>
-				<th>Name</th>
+				<th>Nama</th>
 				<th>Alamat</th>
 				<th>No Hp</th>
 				<th>Email</th>

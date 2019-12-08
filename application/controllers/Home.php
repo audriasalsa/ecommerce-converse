@@ -17,11 +17,11 @@ class Home extends CI_Controller {
 		$data['produk'] = $this->Produk_model->getDataWithDetail($where);
 		$this->load->view('home',$data);
 	}
-	public function gender($gender)
+	public function tipe($tipe)
 	{
 		$this->load->model('Produk_model');
 		$where = array(
-			'gender' => $gender,
+			'tipe' => $tipe,
 			'produk_detail.stok >' => 0
 		);
 		$data['produk'] = $this->Produk_model->getDataWithDetail($where);
@@ -87,9 +87,9 @@ class Home extends CI_Controller {
 									<li class="list-inline-item">
 										<a href="<?php echo base_url('assets_home/') ?>"><i class="fa fa-folder-open-o"></i><?php echo $value['tipe'] ?></a>
 									</li>
-									<li class="list-inline-item">
+<!-- 									<li class="list-inline-item">
 										<a href="<?php echo base_url('assets_home/') ?>"><i class="fa fa-calendar"></i><?php echo $value['series'] ?></a>
-									</li>
+									</li> -->
 								</ul>
 								<p class="card-text"><?php echo $value['deskripsi'] ?></p>
 								<h1 class="card-title"><?php echo $value['harga'] ?></h1>

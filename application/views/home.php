@@ -7,20 +7,17 @@
 			<div class="col-md-12">
 				<!-- Header Contetnt -->
 				<div class="content-block">
-					<p class="h2">SHOES ARE BORING</p>
-					<h1>WEAR SNEAKERS</h1>
-					<p>CONVERSE</p>
+					<!-- <p class="h2">GREEN DECOR</p> -->
+					<h1>GREEN DECOR</h1>
+					<p>Real Plants, Plastic Plants</p>
 					<div class="short-popular-category-list text-center">
-						<h2>Genders</h2>
+						<h2>Category</h2>
 						<ul class="list-inline">
 							<li class="list-inline-item">
-								<a href="<?php echo base_url('Home/gender/men') ?>"><i class="fa fa-male"></i> Men</a>
+								<a href="<?php echo base_url('Home/tipe/real') ?>"> Real Plants</a>
 							</li>
 							<li class="list-inline-item">
-								<a href="<?php echo base_url('Home/gender/women') ?>"><i class="fa fa-female"></i> Women</a>
-							</li>
-							<li class="list-inline-item">
-								<a href="<?php echo base_url('Home/gender/kids') ?>"><i class="fa fa-car"></i> Kids</a>
+								<a href="<?php echo base_url('Home/tipe/plastic') ?>">Plastic Plants</a>
 							</li>
 						</ul>
 					</div>
@@ -49,7 +46,7 @@
 		<div class="row">
 			<div class="col-md-12">
 				<div class="section-title">
-					<h2>Trending Sneakers</h2>
+					<h2>Trending Plants</h2>
 				</div>
 			</div>
 		</div>

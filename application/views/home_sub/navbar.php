@@ -4,7 +4,7 @@
       <div class="col-md-12">
         <nav class="navbar navbar-expand-lg  navigation">
           <a class="navbar-brand" href="<?php echo base_url('assets_home/') ?>index.html">
-            <img src="<?php echo base_url('assets/img/web/Converselogo.png') ?>" alt="" height=50px>
+            <img src="<?php echo base_url('assets/img/web/logo.png') ?>" alt="" height=50px>
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>

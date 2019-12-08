@@ -7,7 +7,7 @@
 			<!-- Left sidebar -->
 			<div class="col-md-8">
 				<div class="product-details">
-					<h1 class="product-title">Converse</h1>
+					<h1 class="product-title">Plants</h1>
 					<div class="product-meta">
 						<!--<ul class="list-inline">
 							<li class="list-inline-item"><i class="fa fa-user-o"></i> By <a href="">Andrew</a></li>
@@ -38,16 +38,8 @@
 										<td><?php echo $produk['datecreated'] ?></td>
 									</tr>
 									<tr>
-										<td>Gender</td>
-										<td><?php echo strtoupper($produk['gender']) ?></td>
-									</tr>
-									<tr>
 										<td>Tipe</td>
 										<td><?php echo strtoupper($produk['tipe']) ?></td>
-									</tr>
-									<tr>
-										<td>Series</td>
-										<td><?php echo strtoupper($produk['series']) ?></td>
 									</tr>
 								</tbody>
 							</table>
@@ -67,7 +59,7 @@
 							<input type="hidden" class="form-control" name="id" value="<?php echo $produk['id'] ?>">
 							<input type="hidden" class="form-control" name="nama" value="<?php echo $produk['nama'] ?>">
 							<input type="hidden" name="harga" value="<?php echo $produk['harga'] ?>">
-							<div class="form-group">
+<!-- 							<div class="form-group">
 								<label for="ukuran">Ukuran</label>
 								<select name="ukuran" id="ukuran" class="form-control w-100">
 									<option value="" default>Pilih Ukuran</option>
@@ -75,7 +67,7 @@
 										<option value="<?php echo $value['ukuran'] ?>" data-stok="<?= $value['stok'] ?>"><?php echo $value['ukuran'] ?></option>
 									<?php endforeach ?>
 								</select>
-							</div>
+							</div> -->
 							<div class="form-group">
 								<label for="qty">Jumlah</label>
 								<input type="number" name="qty" id="qty" class="form-control" value="1" min='1'>

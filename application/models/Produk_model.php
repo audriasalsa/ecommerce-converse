@@ -22,9 +22,9 @@ class Produk_model extends CI_Model {
 		$this->db->from('produk');
 		$this->db->join('produk_detail','produk.id = produk_detail.fk_id_produk','left');
 		$this->db->where('produk_detail.stok >',0);
-		$this->db->where('gender',$this->input->post('gender'));
+		// $this->db->where('gender',$this->input->post('gender'));
 		$this->db->where_in('tipe',$this->input->post('tipe'));
-		$this->db->where_in('series',$this->input->post('series'));
+		// $this->db->where_in('series',$this->input->post('series'));
 		switch ($this->input->post('harga')) {
 			case 'a':
 				$this->db->where('harga <=',500000);
@@ -47,22 +47,22 @@ class Produk_model extends CI_Model {
 	}
 	public function all_category()
 	{
-		$this->db->select('gender,count(*) as jml');
-		$this->db->from('produk');
-		$this->db->group_by('gender');
-		$data['gender'] = $this->db->get()->result_array();
 		$this->db->select('tipe,count(*) as jml');
 		$this->db->from('produk');
 		$this->db->group_by('tipe');
 		$data['tipe'] = $this->db->get()->result_array();
-		$this->db->select('series,count(*) as jml');
-		$this->db->from('produk');
-		$this->db->group_by('series');
-		$data['series'] = $this->db->get()->result_array();
-		$this->db->select('warna,count(*) as jml');
-		$this->db->from('produk');
-		$this->db->group_by('warna');
-		$data['warna'] = $this->db->get()->result_array();
+		// $this->db->select('tipe,count(*) as jml');
+		// $this->db->from('produk');
+		// $this->db->group_by('tipe');
+		// $data['tipe'] = $this->db->get()->result_array();
+		// $this->db->select('series,count(*) as jml');
+		// $this->db->from('produk');
+		// $this->db->group_by('series');
+		// $data['series'] = $this->db->get()->result_array();
+		// $this->db->select('warna,count(*) as jml');
+		// $this->db->from('produk');
+		// $this->db->group_by('warna');
+		// $data['warna'] = $this->db->get()->result_array();
 		return $data;
 	}
 	public function search_word($word)
@@ -74,12 +74,8 @@ class Produk_model extends CI_Model {
 		if($word){
 			$this->db->like('produk.nama',$word);
 			$this->db->or_like('produk.deskripsi',$word);
-			$this->db->or_like('produk.gender',$word);
 			$this->db->or_like('produk.tipe',$word);
-			$this->db->or_like('produk.series',$word);
-			$this->db->or_like('produk.warna',$word);
 			$this->db->or_like('produk.harga',$word);
-			$this->db->or_like('produk_detail.ukuran',$word);
 
 		}
 		$this->db->where('produk_detail.stok >',0);

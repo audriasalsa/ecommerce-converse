@@ -6,14 +6,14 @@
 			<div class="col-md-3">
 				<div class="category-sidebar">
 					<form action="<?php echo base_url('Home/coba') ?>" method="post" id="produk-filter">
-						<div class="widget category-list">
+<!-- 						<div class="widget category-list">
 							<h4 class="widget-header">Gender</h4>
 							<select name="gender" id="gender" class="form-control w-100">
 								<?php foreach ($gender as $key => $value): ?>
 									<option value="<?php echo $value['gender'] ?>"><?php echo $value['gender'] ?></option>	
 								<?php endforeach ?>
 							</select>
-						</div>
+						</div> -->
 
 						<div class="widget category-list">
 							<h4 class="widget-header">Tipe</h4>
@@ -26,7 +26,7 @@
 							<?php endforeach ?>
 						</div>
 
-						<div class="widget filter">
+<!-- 						<div class="widget filter">
 							<h4 class="widget-header">Series</h4>
 							<?php foreach ($series as $key => $value): ?>
 								<div class="custom-control custom-checkbox">
@@ -35,7 +35,7 @@
 								</div>	
 
 							<?php endforeach ?>
-						</div>
+						</div> -->
 
 						<div class="widget price-range">
 							<h4 class="widget-header">Harga</h4>
@@ -100,9 +100,9 @@
 												<li class="list-inline-item">
 													<a href="<?php echo base_url('assets_home/') ?>"><i class="fa fa-folder-open-o"></i><?php echo $value['tipe'] ?></a>
 												</li>
-												<li class="list-inline-item">
+												<!-- <li class="list-inline-item">
 													<a href="<?php echo base_url('assets_home/') ?>"><i class="fa fa-calendar"></i><?php echo $value['series'] ?></a>
-												</li>
+												</li> -->
 											</ul>
 											<p class="card-text"><?php echo $value['deskripsi'] ?></p>
 											<h1 class="card-title"><?php echo $value['harga'] ?></h1>

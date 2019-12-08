@@ -10,10 +10,7 @@
 				<th>Nama</th>
 				<th>Deskripsi</th>
 				<th>Image</th>
-				<th>Gender</th>
 				<th>Tipe</th>
-				<th>Series</th>
-				<th>Warna</th>
 				<th>Harga</th>
 				<th>Discount</th>
 				<th>Action</th>
@@ -26,10 +23,7 @@
 					<td><?php echo $value['nama'] ?></td>
 					<td><?php echo $value['deskripsi'] ?></td>
 					<td><img src="<?php echo base_url('assets/img/produk/'.$value['image']) ?>" alt="Foto Kosong" style="width: 100px;"></td>
-					<td><?php echo $value['gender'] ?></td>
 					<td><?php echo $value['tipe'] ?></td>
-					<td><?php echo $value['series'] ?></td>
-					<td><?php echo $value['warna'] ?></td>
 					<td><?php echo $value['harga'] ?></td>
 					<td><?php echo $value['discount'] ?></td>
 					<td>

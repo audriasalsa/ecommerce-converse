@@ -19,44 +19,11 @@
 		</div>
 	</div>
 	<div class="form-group row">
-		<label for="gender" class="col-sm-2 col-form-label">gender</label>
-		<div class="col-sm-10">
-			<select name="gender" id="gender" class="form-control">
-				<option value="men">MEN</option>
-				<option value="women">WOMEN</option>
-				<option value="kids">KIDS</option>
-			</select>
-		</div>
-	</div>
-	<div class="form-group row">
 		<label for="tipe" class="col-sm-2 col-form-label">tipe</label>
 		<div class="col-sm-10">
 			<select name="tipe" id="tipe" class="form-control">
-				<option value="sneaker">SNEAKER</option>
-				<option value="clothing">CLOTHING</option>
-				<option value="accessories">ACCESSORIES</option>
-			</select>
-		</div>
-	</div>
-	<div class="form-group row">
-		<label for="series" class="col-sm-2 col-form-label">series</label>
-		<div class="col-sm-10">
-			<select name="series" id="series" class="form-control">
-				<option value="chuck taylor all star">CHUCK TAYLOR ALL STAR</option>
-				<option value="converse cons">CONVERSE CONS</option>
-			</select>
-		</div>
-	</div>
-	<div class="form-group row">
-		<label for="warna" class="col-sm-2 col-form-label">warna</label>
-		<div class="col-sm-10">
-			<select name="warna" id="warna" class="form-control">
-				<option value="blue">BLUE</option>
-				<option value="black">BLACK</option>
-				<option value="green">GREEN</option>
-				<option value="grey">GREY</option>
-				<option value="pink">PINK</option>
-				<option value="orange">ORANGE</option>
+				<option value="real">REAL</option>
+				<option value="plastic">PLASTIC</option>
 			</select>
 		</div>
 	</div>
